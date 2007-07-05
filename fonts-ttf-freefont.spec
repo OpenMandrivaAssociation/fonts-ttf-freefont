@@ -14,14 +14,14 @@ URL:		http://www.nongnu.org/freefont/
 BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildArch:	noarch
 Requires(post):	fontconfig
-Requires(postun):fontconfig
+Requires(postun): fontconfig
 
 %description 
 A set of Truetype fonts released under the GPL.
 This project aims to provide a set of free outline
 (PostScript Type0, TrueType, OpenType...) fonts
 covering the ISO 10646/Unicode UCS (Universal Character Set).
-This package provides the Trueype fonts from that project.
+This package provides the Truetype fonts from that project.
 
 %prep
 %setup -q -n freefont-%{version}
