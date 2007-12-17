@@ -11,7 +11,6 @@ Patch0:		freefont-20040828.fontforge.patch
 License:	GPL
 Group:		System/Fonts/True type
 URL:		http://www.nongnu.org/freefont/
-BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildArch:	noarch
 Requires(post):	fontconfig
 Requires(postun): fontconfig
