@@ -1,14 +1,14 @@
 Summary:	A set of free Truetype fonts (GPL)
 Name:		fonts-ttf-freefont
-Version:	20060126
-Release:	%mkrel 3
+Version:	20090104
+Release:	%mkrel 1
 
 Source0:	freefont-ttf-%{version}.tar.gz
 Source1:	remove-kana-glyphs
 Source2:	freefont-20040828.readme_kana.mdk
 # (mpol) pfaedit is now fontforge
 Patch0:		freefont-20040828.fontforge.patch
-License:	GPL
+License:	GPLv3+
 Group:		System/Fonts/True type
 URL:		http://www.nongnu.org/freefont/
 BuildRoot:	%_tmppath/%name-%version-%release-root
