@@ -1,7 +1,7 @@
 Summary:	A set of free Truetype fonts (GPL)
 Name:		fonts-ttf-freefont
 Version:	20090104
-Release:	%mkrel 2
+Release:	%mkrel 3
 
 Source0:	freefont-ttf-%{version}.tar.gz
 Source1:	remove-kana-glyphs
@@ -13,6 +13,8 @@ Group:		System/Fonts/True type
 URL:		http://www.nongnu.org/freefont/
 BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildArch:	noarch
+Requires(post): mkfontdir mkfontscale
+Requires(postun): mkfontdir mkfontscale
 
 %description 
 A set of Truetype fonts released under the GPL.
@@ -27,13 +29,21 @@ This package provides the Truetype fonts from that project.
 %build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/fonts/TTF
+rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_datadir}/fonts/TTF
 
-install -m644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/TTF
+install -m644 *.ttf %{buildroot}%{_datadir}/fonts/TTF
+
+%post
+mkfontscale %{_datadir}/fonts/TTF
+mkfontdir %{_datadir}/fonts/TTF
+
+%postun
+mkfontscale %{_datadir}/fonts/TTF
+mkfontdir %{_datadir}/fonts/TTF
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
