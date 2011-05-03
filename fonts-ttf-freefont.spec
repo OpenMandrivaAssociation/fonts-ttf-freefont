@@ -1,7 +1,7 @@
 Summary:	A set of free Truetype fonts (GPL)
 Name:		fonts-ttf-freefont
 Version:	20090104
-Release:	%mkrel 4
+Release:	%mkrel 5
 
 Source0:	freefont-ttf-%{version}.tar.gz
 Source1:	remove-kana-glyphs
