@@ -13,6 +13,7 @@ Group:		System/Fonts/True type
 URL:		http://www.nongnu.org/freefont/
 BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildArch:	noarch
+BuildRequires: fontconfig
 Requires(post): mkfontdir mkfontscale
 Requires(postun): mkfontdir mkfontscale
 
