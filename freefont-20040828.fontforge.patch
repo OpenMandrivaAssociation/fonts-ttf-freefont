@@ -1,0 +1,8 @@
+--- fonts-ttf-freefont-20040828/freefont/tools/ConvertFont.pfaedit	2002-12-18 18:36:36.000000000 +0100
++++ fonts-ttf-freefont-20040828/freefont/tools/ConvertFont	2004-08-28 17:16:44.335774715 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/pfaedit
++#!/usr/bin/fontforge
+ # $Id: ConvertFont,v 1.1 2002/12/18 17:36:36 peterlin Exp $
+ #
+ # Convert fonts from PfaEdit's native format to TrueType format
