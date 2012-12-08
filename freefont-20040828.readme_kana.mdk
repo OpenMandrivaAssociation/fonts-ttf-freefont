@@ -1,0 +1,18 @@
+From Suse's Bugzilla #37113 by mfabian@suse.de
+
+  remove Kana to improve the appearance of
+  Japanese during the installation.
+  Kana without Kanji are completely useless.
+  They can only cause problems because it can happen
+  that they are combined with Kanji from a completely different
+  font which looks very ugly. This happens easily in Qt
+  applications because Qt unfortunately treats "Hiragana",
+  "Katakana", and "Han" as 3 different Unicode regions and may
+  select a different font for each of these regions. I.e. if
+  FreeSans is set as the main font in Qt while using Japanese,
+  FreeSans will be used no only for Latin but also for Kana and
+  only for the Kanji a "real" Japanese font like "Kochi Gothic"
+  will be used. This looks very bad. If FreeSans doesn't have
+  Kana at all, the "real" Japanese font will be used for the
+  Kana and the Kanji, which looks much nicer.
+
