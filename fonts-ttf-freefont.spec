@@ -1,7 +1,7 @@
 Summary:	A set of free Truetype fonts (GPL)
 Name:		fonts-ttf-freefont
 Version:	20090104
-Release:	13
+Release:	14
 License:	GPLv3+
 Group:		System/Fonts/True type
 Url:		http://www.nongnu.org/freefont/
