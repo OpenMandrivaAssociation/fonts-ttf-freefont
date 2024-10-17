@@ -4,7 +4,7 @@ Version:	20120503
 Release:	2
 License:	GPLv3+
 Group:		System/Fonts/True type
-Url:		http://www.nongnu.org/freefont/
+Url:		https://www.nongnu.org/freefont/
 Source0:	http://ftp.gnu.org/gnu/freefont/freefont-ttf-%{version}.zip
 Source1:	remove-kana-glyphs
 Source2:	freefont-20040828.readme_kana.mdk
